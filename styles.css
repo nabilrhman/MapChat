@@ -45,7 +45,7 @@ p
     opacity: 1;
     position: relative;
     width: 100%;
-    height: 82%;
+    height: 100%;
     float:left;
     top: 90px;
     overflow-y: auto;
@@ -128,7 +128,7 @@ p
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-top: 5px;
+    padding: 10px;
     background-color: white;
 }
 
@@ -140,23 +140,6 @@ p
 
 }
 
-.input textarea {
-    height: 10%;
-    max-height: 150px;
-    resize: none;
-    width: 79%;
-    border-radius: 3px;
-    line-height: 25px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    overflow: hidden;
-
-    float: left;
-    
-
-}
 
 .input button
 {
