@@ -3,8 +3,9 @@
 
 <head>
 
-    <link rel="stylesheet" href="normalize.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
     <script type='text/javascript' src='js/map.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -13,12 +14,46 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Resize-->
+    <script src="js/ResizeSensor.js"></script>
+    <script src="js/ElementQueries.js"></script>
 
     <script>
-        window.alert("Hello");
-    var h = document.getElementById("msg").style.height;
-    
+
+        $(document).ready(function () {
+
+            
+            function resizeChatlist() {
+                
+                var input_height = $(".input").outerHeight();
+                var app_container_height = $(".app-container").height();
+                var resized_chat_list_height = app_container_height - input_height;
+                //window.alert("resize fired");
+                //window.alert("chat_list_height" + app_container_height);
+                $(".chat-container").css({ "height": resized_chat_list_height });
+                
+            }
+
+            
+
+            window.alert("Input size: " + $("#message-text").height());
+            // Resize event
+            resizeChatlist();
+
+            var input_message_element = document.getElementById('msg');
+            
+            new ResizeSensor(input_message_element, function () {
+
+                resizeChatlist();    
+            });
+        });
+
     </script>
+
+
+
 </head>
 
 
@@ -138,23 +173,23 @@
                         with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     <span id="location">Boise</span>
                     <span id="time">11:00</span>
-                    
+
                 </div>
-            
-                
+
+
 
 
 
 
             </div>
-            
-            <div class="input" id="msg">
 
-                <textarea placeholder="Type your message" id="message-text" class="materialize-textarea"></textarea>
-                <!-- <button id="send" class="material-icons">send</button> -->
-            </div>
 
-            
+        </div>
+
+        <div class="input" id="msg">
+
+            <textarea placeholder="Type your message" id="message-text" class="materialize-textarea"></textarea>
+            <!-- <button id="send" class="material-icons">send</button> -->
         </div>
 
 
