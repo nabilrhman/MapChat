@@ -2,7 +2,9 @@
 
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        
 
         <script>
             function redirect() {
@@ -12,7 +14,7 @@
         </script>
         <style>
             html { 
-                background: url(res/background.jpg) no-repeat center center fixed; 
+                background: url(res/bg.gif) no-repeat center center fixed; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -24,6 +26,7 @@
                 min-height: 100vh;
                 flex-direction: column;
                 position: relative;
+                background-color: "#512da8"
 
             }
 
@@ -35,6 +38,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%); 
                 width: 100%;
+                
 
 
             }
@@ -75,6 +79,10 @@
             #logo:hover {
                 transform: scale(1.1);
             }
+            
+            a {
+                color: #ffc107;
+            }
 
             @keyframes bounceIn {
                 0% {
@@ -110,11 +118,11 @@
 
                 <div class="section"></div>
 
-                <h5 class="white-text">Sign in</h5>
+                <h5 class="white-text">SIGN IN</h5>
                 <div class="section"></div>
 
-                <div class="container">
-                    <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+                <div class="container" >
+                    <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE; border-top: 4px solid #ffc107;">
 
                         <form class="col s12" method="post">
                             <div class='row'>
@@ -135,7 +143,7 @@
                                     <label for='password'>Enter your password</label>
                                 </div>
                                 <label style='float: right;'>
-                                    <a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+                                    <a class='red-text' href='#!'><b>Forgot Password?</b></a>
                                 </label>
                             </div>
 
