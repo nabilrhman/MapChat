@@ -1,235 +1,167 @@
-<!DOCTYPE html>
 <html>
 
     <head>
-
-        <!-- <link rel="stylesheet" href="normalize.css"> -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <script type='text/javascript' src='js/map.js'></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="css/materialize.css">
-
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <!-- Resize-->
-        <script src="js/ResizeSensor.js"></script>
-        <script src="js/ElementQueries.js"></script>
-
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        
 
         <script>
-
-            $(document).ready(function () {
-
-
-                function resizeChatlist() {
-
-                    var input_height = $(".input").outerHeight();
-                    var app_container_height = $(".app-container").height();
-                    var resized_chat_list_height = app_container_height - input_height;
-                    //window.alert("resize fired");
-                    //window.alert("chat_list_height" + app_container_height);
-                    $(".chat-container").css({ "height": resized_chat_list_height });
-
-                }
-                // Auto scroll
-                var scrolled = false;
-
-                function updateScroll()
-                {
-                    if(!scrolled){
-                        $(".chat-container").animate({ scrollTop: $(".chat-container").prop("scrollHeight")}, 1000);
-                    }
-                }
-
-                $(".chat-container").on('scroll', function(){
-                    scrolled=true;                
-                });
-
-                
-                // Resize event
-                resizeChatlist();
-                updateScroll();
-
-                var input_message_element = document.getElementById('msg');
-
-                new ResizeSensor(input_message_element, function () {
-
-                    resizeChatlist();
-                    $(".chat-container").animate({ scrollTop: $(".chat-container").prop("scrollHeight")}, 1000);
-
-                });
-
-
-
-
-            });
-
+            function redirect() {
+                url = "index.html";
+                $( location ).attr("href", url);
+            }
         </script>
+        <style>
+            html { 
+                background: url(res/bg.gif) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                position: relative;
+                background-color: "#512da8"
+
+            }
+
+            main {
+                flex: 1 0 auto;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); 
+                width: 100%;
+                
+
+
+            }
+
+            white-text {
+                color: white;
+            }
+
+            brand-purple {
+                background-color: #512da8;
+            }
 
 
 
+            .input-field input[type=date]:focus + label,
+            .input-field input[type=text]:focus + label,
+            .input-field input[type=email]:focus + label,
+            .input-field input[type=password]:focus + label {
+                color: #512da8;
+            }
+
+            .input-field input[type=date]:focus,
+            .input-field input[type=text]:focus,
+            .input-field input[type=email]:focus,
+            .input-field input[type=password]:focus {
+                border-bottom: 2px solid #512da8;
+                border-bottom: 2px solid #512da8;
+                box-shadow: none;
+            }
+
+            #logo {
+                animation: bounceIn 0.6s;
+                transform: rotate(0deg) scale(1) translateZ(0);
+                transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+                cursor: pointer;
+            }
+
+            #logo:hover {
+                transform: scale(1.1);
+            }
+            
+            a {
+                color: #ffc107;
+            }
+
+            @keyframes bounceIn {
+                0% {
+                    opacity: 1;
+                    transform: scale(.3);
+                } 
+
+                50% {
+                    opacity: 1;
+                    transform: scale(1.05);
+                } 
+
+                70% {
+                    opacity: 1;
+                    transform: scale(.9);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+
+        </style>
     </head>
 
-
     <body>
+        <div class="section"></div>
+        <main>
+            <center>
+                <img class="responsive-img" id="logo" src="res/logo.png" />
 
+                <div class="section"></div>
 
+                <h5 class="white-text">SIGN IN</h5>
+                <div class="section"></div>
 
-        <div class="header">
-            <a href="login.html" class="logo hvr-grow"></a>
-            <div class="container pullLeft">
-                <a>SIGNOUT</a>
-                <a>PROFILE</a>
-                <a>ABOUT</a>
-            </div>
-        </div>
+                <div class="container" >
+                    <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE; border-top: 4px solid #ffc107;">
 
-        <div class="app-container">
+                        <form class="col s12" method="post">
+                            <div class='row'>
+                                <div class='col s12'>
+                                </div>
+                            </div>
 
-            <div class="chat-container" id="chat-container">
-                <div class="chat-list">
+                            <div class='row'>
+                                <div class='input-field col s12'>
+                                    <input class='validate' type='email' name='email' id='email' />
+                                    <label for='email'>Enter your email</label>
+                                </div>
+                            </div>
 
-                    <div class="chat hvr-glow" id="first">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
+                            <div class='row'>
+                                <div class='input-field col s12'>
+                                    <input class='validate' type='password' name='password' id='password' />
+                                    <label for='password'>Enter your password</label>
+                                </div>
+                                <label style='float: right;'>
+                                    <a class='red-text' href='#!'><b>Forgot Password?</b></a>
+                                </label>
+                            </div>
+
+                            <br />
+                            <center>
+                                <div class='row'>
+                                    <button type="button" name='btn_login' class='col s12 btn btn-large waves-effect indigo' onclick="redirect()">Login</button>
+                                </div>
+                            </center>
+                        </form>
                     </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Hello. How are you today?</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-                    </div>
-
-                    <div class="chat hvr-glow" id="last">
-                        <img id="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                        <h3 id="name">Nabil Rahman</h3>
-                        <p class="chat-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <span id="location">Boise</span>
-                        <span id="time">11:00</span>
-
-                    </div>
-
-
-
-
-
-
                 </div>
+                <a href="#!">Create account</a>
+            </center>
+        </main>
 
-
-            </div>
-
-            <div class="input" id="msg">
-
-                <textarea placeholder="Type your message" id="message-text" class="materialize-textarea"></textarea>
-                <!-- <button id="send" class="material-icons">send</button> -->
-            </div>
-
-
-
-            <div id="map">
-                <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1ZT3FLo6fZc1_xAI3asjebX3z16z9GnY&callback=initMap">
-                </script>-->
-                <iframe src="https://snazzymaps.com/embed/100419" width="100%" height="100%" style="border:none;"></iframe>
-            </div>
-            
-            
-
-        </div>
-
-
-
-
-
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     </body>
 
 </html>
