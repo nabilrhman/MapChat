@@ -6,6 +6,8 @@
     <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
     <script type='text/javascript' src='js/map.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -60,8 +62,9 @@
 
             new ResizeSensor(input_message_element, function () {
 
-                resizeChatlist();
+
                 $(".chat-container").animate({scrollTop: $(".chat-container").prop("scrollHeight")}, 1000);
+                resizeChatlist();
 
             });
 
@@ -74,7 +77,7 @@
 </head>
 
 
-<body>
+<body class="animated fadeIn">
 
 
 <div class="header">

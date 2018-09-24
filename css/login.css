@@ -1,10 +1,5 @@
 html {
-    background-color: #512da8;
-    background: url("../res/bg.gif") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
 }
 
 body {
@@ -12,6 +7,11 @@ body {
     min-height: 100vh;
     flex-direction: column;
     position: relative;
+    background: url("../res/bg.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 main {
@@ -54,9 +54,6 @@ brand-purple {
 }
 
 #logo {
-    animation: bounceIn 0.6s;
-    transform: rotate(0deg) scale(1) translateZ(0);
-    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
     cursor: pointer;
 }
 
@@ -68,27 +65,7 @@ a {
     color: #ffc107;
 }
 
-@keyframes bounceIn {
-    0% {
-        opacity: 1;
-        transform: scale(.3);
-    }
 
-    50% {
-        opacity: 1;
-        transform: scale(1.05);
-    }
-
-    70% {
-        opacity: 1;
-        transform: scale(.9);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 
 .form-container {
     display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE; border-top: 4px solid #ffc107;
