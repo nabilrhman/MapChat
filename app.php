@@ -151,8 +151,10 @@
 <div class="input" id="msg">
 
     <textarea placeholder="Type your message" id="message-text" class="materialize-textarea"></textarea>
-    <!-- <button id="send" class="material-icons">send</button> -->
+    <a class="btn-floating waves-effect waves-light purple hvr-bounce-in" id="button-send"><i class="material-icons">send</i></a>
+
 </div>
+
 
 
 <div id="map">
