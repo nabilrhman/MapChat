@@ -104,18 +104,19 @@
                 for ($x = 0; $x <= 10; $x++) {
             ?>
 
-            <div class="chat hvr-glow" id="first">
-                <img class="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar"
-                     style="width:100%;">
-                <h3 class="name">Nabil Rahman</h3>
-                <p class="chat-paragraph">Hello. How are you today?</p>
-                <span class="location">Boise</span>
-                <span class="time">11:00</span>
-            </div>
-                    <?php
-                    }
+                <div class="chat hvr-glow" id="first">
+                    <img class="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar"
+                         style="width:100%;">
+                    <h3 class="name">Nabil Rahman</h3>
+                    <p class="chat-paragraph">Hello. How are you today?</p>
+                    <span class="location">Boise</span>
+                    <span class="time">11:00</span>
+                </div>
+                
+            <?php
+                }
 
-                    ?>
+            ?>
 
 
             <div class="chat hvr-glow" id="last">

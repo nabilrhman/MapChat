@@ -1,0 +1,95 @@
+html {
+    background-color: #512da8;
+    background: url("../res/bg.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+main {
+    flex: 1 0 auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+
+
+}
+
+white-text {
+    color: white;
+}
+
+brand-purple {
+    background-color: #512da8;
+}
+
+
+
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #512da8;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 2px solid #512da8;
+    border-bottom: 2px solid #512da8;
+    box-shadow: none;
+}
+
+#logo {
+    animation: bounceIn 0.6s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    cursor: pointer;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: #ffc107;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.form-container {
+    display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE; border-top: 4px solid #ffc107;
+}
