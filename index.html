@@ -8,13 +8,14 @@
 
         <script>
             function redirect() {
-                url = "app.html";
+                url = "app.php";
                 $( location ).attr("href", url);
             }
         </script>
         <style>
-            html { 
-                background: url(res/bg.gif) no-repeat center center fixed; 
+            html {
+                background-color: #512da8;
+                background: url("res/bg.gif") no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -26,8 +27,6 @@
                 min-height: 100vh;
                 flex-direction: column;
                 position: relative;
-                background-color: "#512da8"
-
             }
 
             main {

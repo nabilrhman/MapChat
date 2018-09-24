@@ -70,7 +70,7 @@ body
     display: table;
 }
 
-.chat #avatar {
+.chat .avatar {
     float: left;
     max-width: 30px;
     width: 100%;
@@ -81,7 +81,7 @@ body
     display: table-cell;
 }
 
-.chat #name {
+.chat .name {
     margin-left: 70px;
     line-height: 0px;
     font-size: 16px;
@@ -90,19 +90,19 @@ body
     font-weight: 600;
 }
 
-.chat #time {
+.chat .time {
     float: right;
     color: #aaa;
     padding-right: 15px;
 }
 
-.chat #location {
+.chat .location {
     float: left;
     color: blueviolet;
     margin-left: 70px;
 }
 
-.chat #location::after {
+.chat .location::after {
     content: "";
     clear: both;
     display: table;
