@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
 
+    <link rel="stylesheet" type="text/css" href="css/header.css">
     <script type='text/javascript' src='js/map.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -64,6 +65,7 @@
 
 
                 $(".chat-container").animate({scrollTop: $(".chat-container").prop("scrollHeight")}, 1000);
+                $(".input").animate({scrollTop: $(".input").prop("scrollHeight")}, 1000);
                 resizeChatlist();
 
             });
@@ -80,14 +82,18 @@
 <body class="animated fadeIn">
 
 
-<div class="header">
+<!-- <div class="header">
     <a href="index.html" class="logo hvr-grow"></a>
     <div class="container pullLeft">
         <a>SIGNOUT</a>
         <a>PROFILE</a>
         <a>ABOUT</a>
     </div>
-</div>
+</div> -->
+
+<?php
+    include 'header.php';
+?>
 
 <div class="app-container">
 
@@ -115,10 +121,9 @@
                     <span class="location">Boise</span>
                     <span class="time">11:00</span>
                 </div>
-                
+
             <?php
                 }
-
             ?>
 
 
