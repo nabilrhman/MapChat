@@ -31,11 +31,6 @@ white-text {
     color: white;
 }
 
-brand-purple {
-    background-color: #512da8;
-}
-
-
 
 .input-field input[type=date]:focus + label,
 .input-field input[type=text]:focus + label,
