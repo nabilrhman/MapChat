@@ -34,7 +34,8 @@
 
                 var input_height = $(".input").outerHeight();
                 var app_container_height = $(".app-container").height();
-                var resized_chat_list_height = app_container_height - input_height;
+                var footer_height = $(".footer").outerHeight() - 4;
+                var resized_chat_list_height = app_container_height - (input_height + footer_height)  ;
                 //window.alert("resize fired");
                 //window.alert("chat_list_height" + app_container_height);
                 $(".chat-container").css("height", resized_chat_list_height);
@@ -63,15 +64,24 @@
 
             function fixInputTextFieldPosition()
             {
-                var input_width = $(".input").outerWidth();
                 var button_width = $("#button-send").outerWidth();
-                var resized_input_width = input_width - 2.3 * button_width;
-                $("#message-text").css("width", resized_input_width);
+
+                $(".input").css("padding-right", 2 * button_width);
+                $(".input").css("bottom", footer_height);
                 //confirm("input outer w: " + input_width + " button outer w: " + button_width + " resized: " + resized_input_width + " #message-text width: " + $("#message-text").height());
 
             }
 
-            fixInputTextFieldPosition();
+
+
+            function fixSendButtonPosition() {
+                var input_width = $("#message-text").outerWidth();
+                var button_width = $("#button-send").outerWidth();
+                $("#button-send").css("left", input_width);
+            }
+
+
+
 
             var input_message_element = document.getElementById('msg');
 
@@ -80,10 +90,16 @@
 
                 $(".chat-container").animate({scrollTop: $(".chat-container").prop("scrollHeight")}, 1000);
                 $(".input").animate({scrollTop: $(".input").prop("scrollHeight")}, 1000);
+
                 resizeChatlist();
                 fixInputTextFieldPosition();
 
+
             });
+
+            fixInputTextFieldPosition();
+
+
 
         });
 
@@ -165,7 +181,7 @@
 <div class="input" id="msg">
 
     <textarea placeholder="Type your message" id="message-text" class="materialize-textarea"></textarea>
-    <a class="btn-floating waves-effect waves-light purple hvr-bounce-in" id="button-send"><i class="material-icons">send</i></a>
+    <a class="btn-floating waves-effect waves-light purple hvr-bounce-in" id="button-send-fixed"><i class="material-icons">send</i></a>
 
 </div>
 
@@ -176,6 +192,12 @@
     </script>-->
     <iframe src="https://snazzymaps.com/embed/100419" width="100%" height="100%" style="border:none;"></iframe>
 </div>
+
+    <?php
+    include 'footer.php';
+    ?>
+
+
 
 
 </div>

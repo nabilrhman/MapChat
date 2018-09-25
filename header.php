@@ -9,7 +9,7 @@
         echo '<a href="app.php" class="logo hvr-grow">MapChat</a>';
         echo '<div class="container pullLeft">';
         echo '<a href="index.php">SIGNOUT</a>';
-        echo '<a>PROFILE</a>';
+        echo '<a href="profile.php">PROFILE</a>';
         echo '<a href="about.php">ABOUT</a>';
         echo '</div>';
         echo '</div>';

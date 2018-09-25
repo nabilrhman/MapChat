@@ -17,10 +17,6 @@
 
     <script>
 
-        function redirect() {
-            url = "app.php";
-            $(location).attr("href", url);
-        }
 
         $(document).ready(function () {
 
@@ -44,25 +40,25 @@
 <body>
 
 <?php
-    include 'header.php';
+include 'header.php';
 ?>
 
 
-    <!-- Page Layout here -->
-    <div class="row main-content-wrapper">
+<!-- Page Layout here -->
+<div class="row main-content-wrapper">
 
-        <div class="col s12">
+    <div class="col s12">
 
-                <h4>About</h4>
-                <div class="divider"></div>
-                <p>Lorem ipsumjsdkaskdjas kasjdkasljdkasljdlkasjdl kasjdklasjdklsajdklasjdkl aksjdkasljdkasldj</p>
+        <h4>Profile</h4>
+        <div class="divider"></div>
+        <p>Lorem ipsumjsdkaskdjas kasjdkasljdkasljdlkasjdl kasjdklasjdklsajdklasjdkl aksjdkasljdkasldj</p>
 
 
 
-            <!-- Teal page content  -->
-        </div>
-
+        <!-- Teal page content  -->
     </div>
+
+</div>
 
 <?php
 include 'footer.php';
