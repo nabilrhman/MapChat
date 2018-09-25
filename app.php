@@ -37,7 +37,7 @@
                 var resized_chat_list_height = app_container_height - input_height;
                 //window.alert("resize fired");
                 //window.alert("chat_list_height" + app_container_height);
-                $(".chat-container").css({"height": resized_chat_list_height});
+                $(".chat-container").css("height", resized_chat_list_height);
 
             }
 
@@ -59,6 +59,20 @@
             resizeChatlist();
             updateScroll();
 
+
+
+            function fixInputTextFieldPosition()
+            {
+                var input_width = $(".input").outerWidth();
+                var button_width = $("#button-send").outerWidth();
+                var resized_input_width = input_width - 2.3 * button_width;
+                $("#message-text").css("width", resized_input_width);
+                //confirm("input outer w: " + input_width + " button outer w: " + button_width + " resized: " + resized_input_width + " #message-text width: " + $("#message-text").height());
+
+            }
+
+            fixInputTextFieldPosition();
+
             var input_message_element = document.getElementById('msg');
 
             new ResizeSensor(input_message_element, function () {
@@ -67,9 +81,9 @@
                 $(".chat-container").animate({scrollTop: $(".chat-container").prop("scrollHeight")}, 1000);
                 $(".input").animate({scrollTop: $(".input").prop("scrollHeight")}, 1000);
                 resizeChatlist();
+                fixInputTextFieldPosition();
 
             });
-
 
         });
 

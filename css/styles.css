@@ -159,9 +159,9 @@ p.chat-paragraph {
 
 #button-send {
     float: right;
-    position: fixed;
-    bottom: 10px;
-    margin-left: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
 
 }
 
@@ -174,7 +174,7 @@ p.chat-paragraph {
 #message-text {
     display: inline;
     float: left;
-    width: 90%;
+    width: 100%;
 }
 
 /* INPUT MESSAGE ENDS */
