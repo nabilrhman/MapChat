@@ -25,6 +25,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
     <script>
 
         $(document).ready(function () {
