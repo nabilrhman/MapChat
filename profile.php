@@ -16,6 +16,8 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
+    <title>MapChat - Profile</title>
+
 
     <script>
 
