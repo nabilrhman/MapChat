@@ -171,7 +171,7 @@ function initialize() {
 
 
     var locations = [
-        ['DHAKA', 23.777176, 90.399452, 'https://image.ibb.co/mRw699/ic_location.png']
+        ['DHAKA', 23.777176, 90.399452, 'https://image.ibb.co/k1AzU9/ic_location.png']
     ];
 
 
