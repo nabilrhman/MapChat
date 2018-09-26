@@ -3623,9 +3623,12 @@
     }
 }
 
-/******************************* USER DEFINED */
+/* MapChat Custom Animation */
+
 /* Glow */
-.hvr-glow {
+
+.hover-glow
+{
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -3636,12 +3639,15 @@
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
 }
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+.hover-glow:hover, .hover-glow:focus, .hover-glow:active
+{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 /* Float */
-.hvr-float {
+
+.hover-float
+{
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -3654,13 +3660,16 @@
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+.hover-float:hover, .hover-float:focus, .hover-float:active
+{
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
 }
 
 /* Grow */
-.hvr-grow {
+
+.hover-grow
+{
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -3671,22 +3680,77 @@
     -webkit-transition-property: transform;
     transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hover-grow:hover, .hover-grow:focus, .hover-grow:active
+{
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
-
-
 /* Bounce In */
 
-.anim-bounce-in {
+.hover-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hover-bounce-in:hover, .hover-bounce-in:focus, .hover-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Bounce In Reduced*/
+
+.hover-bounce-in-reduced {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hover-bounce-in-reduced:hover, .hover-bounce-in-reduced:focus, .hover-bounce-in-reduced:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Forward */
+
+.hover-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hover-forward:hover, .hover-forward:focus, .hover-forward:active {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+/* Animated Custom Bounce In */
+
+.anim-bounce-in
+{
     animation: bounceIn 0.6s;
     transform: rotate(0deg) scale(1) translateZ(0);
     transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
 }
 
-.anim-bounce-in-slow {
+.anim-bounce-in-slow
+{
     animation: bounceIn 1s;
     transform: rotate(0deg) scale(1) translateZ(0);
     transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
@@ -3714,58 +3778,7 @@
     }
 }
 
-/* Bounce In */
-.hvr-bounce-in {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
-/* Bounce In */
-.hvr-bounce-in-reduced {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-.hvr-bounce-in-reduced:hover, .hvr-bounce-in-reduced:focus, .hvr-bounce-in-reduced:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
-/* Forward */
-.hvr-forward {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-}
-.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px);
-}
-
-/* Fade in background */
+/* Animated Custom Fade In  */
 .anim-fade-in {
 
     -webkit-transition: background 300ms ease-in 200ms; /* property duration timing-function delay */
