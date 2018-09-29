@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="map">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQCJ5dE-f708k-2Acw_xxzfRliL9mamxM&callback=initialize">
+    </script>
+    <!--<iframe src="https://snazzymaps.com/embed/100419" width="100%" height="100%" style="border:none;"></iframe>-->
+</div>
+
+<div class="chat-container">
+
+    <div class="chat-list">
+
+        <div class="chat hover-glow">
+            <div class="chat-avatar-container">
+                <img class="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar"
+                     style="width:100%;">
+            </div>
+            <div class="chat-body-container">
+                <h3 class="name">Nabil Rahman</h3>
+                <p class="chat-body">Hello. How are you today?</p>
+                <span class="location">Boise</span>
+                <span class="time">11:00</span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="input-container">
+        <div class="input" id="msg">
+            <textarea placeholder="Type your message" id="message-text" class="materialize-textarea"></textarea>
+            <!--<a href="#" onclick="myClick(0);">Open Info Window</a>-->
+        </div>
+
+        <div class="button-container">
+            <a class="btn-floating waves-effect waves-light purple hover-bounce-in" id="button-send"
+               onclick="myClick(0);"><i class="material-icons">send</i></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!--<?php
+
+include 'Chats.php';
+
+$results = Chat::getAll();
+
+foreach ($results as $chat) {
+
+
+echo '<div class="chat hvr-glow">';
+echo '<img class="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar"';
+echo 'style="width:100%;">';
+echo '<h3 class="name">' . $chat["first_name"] . " " . $chat["last_name"] . '</h3>';
+echo '<p class="chat-paragraph">' . $chat["body"] . '</p>';
+echo '<span class="location">Boise</span>';
+echo '<span class="time">11:00</span>';
+echo '</div>';
+
+
+}
+
+?>-->
+
+
+<!--<div class="chat hover-glow" id="last">
+    <img class="avatar" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+    <h3 class="name">Nabil Rahman</h3>
+    <p class="chat-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum
+        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <span class="location">Boise</span>
+    <span class="time">11:00</span>-->
+
+
+
+</body>
+</html>
