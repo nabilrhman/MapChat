@@ -163,7 +163,7 @@ chat-body-container
         flex: auto;
     }
 
-        #message-text
+        #message-send
         {
             /*margin-bottom: auto;*/
             margin-top: auto;
@@ -245,4 +245,5 @@ chat-body-container
     clear:both;
     display:table;
 }
+
 
