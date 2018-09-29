@@ -43,3 +43,7 @@ INSERT INTO Chats (body, user_id)
 VALUES ('The classic latin passage that just never gets old, enjoy as much (or as little) lorem ipsum as you can handle with our easy to use filler text generator.', '1');
 INSERT INTO Chats (body, user_id)
 VALUES ('In case you do not read Twitter, the news, or just cannot get enough of The Apprentice host legendary oration, try this Trump lorem ipsum generator on for size.', '3');
+INSERT INTO Chats (body, user_id)
+VALUES ('In case you do not read Twitter, the news, or just cannot get enough of The Apprentice host legendary oration, try this Trump lorem ipsum generator on for size.', '3');
+INSERT INTO Chats (body, user_id)
+VALUES ('In case you do not read Twitter, the news, or just cannot get enough of The Apprentice host legendary oration, try this Trump lorem ipsum generator on for size.', '3');
