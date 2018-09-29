@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f208db-4d26-493a-bb43-78546dacc213" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chats.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mySqlTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/chat.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +32,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="35" />
+          <entry key="css" value="36" />
           <entry key="html" value="9" />
           <entry key="ico" value="1" />
           <entry key="js" value="2" />
@@ -51,7 +42,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="35" />
+          <entry key="CSS" value="36" />
           <entry key="HTML" value="9" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="4" />
@@ -61,7 +52,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2182" />
+          <entry key="css" value="2242" />
           <entry key="html" value="479" />
           <entry key="js" value="42" />
           <entry key="php" value="2050" />
@@ -69,7 +60,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2183" />
+          <entry key="CSS" value="2243" />
           <entry key="HTML" value="479" />
           <entry key="JavaScript" value="42" />
           <entry key="PHP" value="2021" />
@@ -140,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/chat.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
+            <state relative-caret-position="510">
+              <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -167,11 +158,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="1309">
+              <caret line="77" selection-start-line="77" selection-end-line="77" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/animate.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -233,6 +233,7 @@
       <find>textare</find>
       <find>hvr</find>
       <find>ava</find>
+      <find>animate</find>
     </findStrings>
     <replaceStrings>
       <replace>#512da8</replace>
@@ -270,9 +271,9 @@
         <option value="$PROJECT_DIR$/map.html" />
         <option value="$PROJECT_DIR$/chat-list.html" />
         <option value="$PROJECT_DIR$/css/header.css" />
-        <option value="$PROJECT_DIR$/css/chat.css" />
         <option value="$PROJECT_DIR$/app.php" />
         <option value="$PROJECT_DIR$/map.php" />
+        <option value="$PROJECT_DIR$/css/chat.css" />
       </list>
     </option>
   </component>
@@ -363,15 +364,16 @@
       <workItem from="1537984382204" duration="14643000" />
       <workItem from="1538093056139" duration="8550000" />
       <workItem from="1538114735674" duration="1688000" />
-      <workItem from="1538117268888" duration="12234000" />
+      <workItem from="1538117268888" duration="13408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87710000" />
+    <option name="totallyTimeSpent" value="88884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09221748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -439,13 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4512">
-          <caret line="3780" column="23" selection-start-line="3780" selection-start-column="23" selection-end-line="3780" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -546,20 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/chat.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -595,10 +576,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="1309">
+          <caret line="77" selection-start-line="77" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
         </state>
       </provider>
     </entry>
