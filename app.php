@@ -78,9 +78,28 @@
     var scrollCount = 0;
     var hasScrolled = false;
     var message;
-    $(document).ready(function() {
-        ajax();
-        $('#input-container-form').on('submit', function(e){
+    var scrollTop;
+    global var lastChatId;
+    $(document).ready(function () {
+
+        /*
+   Experiment by commenting and uncommenting the two lines below to get the
+   textarea label to be active.
+ */
+
+        //This does not set the label to the active position:
+        $('.input-field label').addClass('active');
+
+
+        //This does set the label to the active position.
+        setTimeout(function () {
+            $('.input-field label').addClass('active');
+        }, 1);
+
+        setInterval(ajax, 1000);
+
+
+        $('#input-container-form').on('submit', function (e) {
             //Stop the form from submitting itself to the server.
             e.preventDefault();
             message = $('.materialize-textarea').val();
@@ -88,19 +107,19 @@
             $.ajax({
 
                 type: 'POST',
-                data: { message : message },
+                data: {message: message},
                 url: 'send.php',
 
-                success: function() {
+                success: function () {
                     $('.materialize-textarea').val("");
+                    M.textareaAutoResize($('.materialize-textarea'));
                     $(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000);
-                    console.log("PHP: " + message);
 
                 }
             });
         });
 
-        $(".materialize-textarea").keypress(function(event) {
+        $(".materialize-textarea").keypress(function (event) {
             if (event.which == 13) {
                 event.preventDefault();
                 $("#input-container-form").submit();
@@ -110,8 +129,7 @@
     });
 
 
-
-    function ajax()
+    /*function ajax()
     {
         var request = new XMLHttpRequest();
         request.onreadystatechange = function ()
@@ -130,11 +148,37 @@
         request.send();
         //$(".chat-list").find(".chat:last").css("background-color", "red");
 
+    }*/
+    function ajax() {
+        $.ajax({
+
+            type: 'GET',
+            dataType: 'html',
+            url: 'realtimeChatRefresh.php',
+
+            success: function (response) {
+                $(".chat-list").html(response);
+                if (scrollCount < 2) {
+                    $(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000);
+                    scrollCount++;
+                    scrollTop = $(".chat-list").scrollTop();
+                }
+
+                    $(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000);
+
+            }
+        });
     }
 
-    setInterval(function () {
-        ajax();
-    }, 1000);
+    function hasScrolled() {
+        if ($(".chat-list").scrollTop() == scrollTop) {
+            return false
+        }
+        else {
+            return true;
+        }
+    }
+
 
     /*function ajaxSend()
     {
@@ -280,12 +324,12 @@ include 'header.php';
         </div>
 
         <div class="button-container">
-            <button name ="send" class="btn-floating waves-effect waves-light purple hover-bounce-in" id="button-send" type="submit">
+            <button name="send" class="btn-floating waves-effect waves-light purple hover-bounce-in" id="button-send"
+                    type="submit">
                 <i class="material-icons">send</i>
             </button>
         </div>
     </form>
-
 
 
 </div>
