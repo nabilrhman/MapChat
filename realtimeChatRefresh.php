@@ -5,15 +5,9 @@ include 'Chats.php';
 $chatId = $GLOBALS['last-chat-id'];
 //echo "<script type='text/javascript'>alert('$chatIs');</script>";
 
-if (!empty($chatId)) {
 
-    $results = Chat::getAfter($GLOBALS['last-chat-id']);
-    //echo "<script type='text/javascript'>alert('Global is set');</script>";
-
-}
-else {
     $results = Chat::getAll();
-}
+
 
 if(!is_null($results)) {
 
@@ -28,8 +22,7 @@ if(!is_null($results)) {
         echo '<h3 class="name">' . $chat["first_name"] . ' ' . $chat["last_name"] . '</h3>';
         echo '<p class="chat-body">' . $chat["body"] . '</p>';
         echo '<span class="location">Boise</span>';
-        $GLOBALS['last-chat-id'] = $chat['chat_id'];
-        echo '<span class="time">' . $GLOBALS['last-chat-id'] . '</span>';
+        echo '<span class="time">' . $chat['chat_id'] . '</span>';
         echo '</div>';
         echo '</div>';
     }

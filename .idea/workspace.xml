@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f208db-4d26-493a-bb43-78546dacc213" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chats.php" beforeDir="false" afterPath="$PROJECT_DIR$/Chats.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/realtimeChatRefresh.php" beforeDir="false" afterPath="$PROJECT_DIR$/realtimeChatRefresh.php" afterDir="false" />
     </list>
@@ -205,11 +203,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="138" column="86" lean-forward="true" selection-start-line="138" selection-start-column="86" selection-end-line="138" selection-end-column="86" />
+            <state relative-caret-position="646">
+              <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -250,11 +248,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/realtimeChatRefresh.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="391">
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -324,8 +322,8 @@
         <option value="$PROJECT_DIR$/css/chat.css" />
         <option value="$PROJECT_DIR$/send.php" />
         <option value="$PROJECT_DIR$/Chats.php" />
-        <option value="$PROJECT_DIR$/app.php" />
         <option value="$PROJECT_DIR$/realtimeChatRefresh.php" />
+        <option value="$PROJECT_DIR$/app.php" />
       </list>
     </option>
   </component>
@@ -413,12 +411,12 @@
       <workItem from="1538209337051" duration="1749000" />
       <workItem from="1538212843751" duration="16730000" />
       <workItem from="1538230927901" duration="3646000" />
-      <workItem from="1538267049525" duration="3681000" />
+      <workItem from="1538267049525" duration="3992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127417000" />
+    <option name="totallyTimeSpent" value="127728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -638,17 +636,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.php">
+    <entry file="file://$PROJECT_DIR$/realtimeChatRefresh.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="138" column="86" lean-forward="true" selection-start-line="138" selection-start-column="86" selection-end-line="138" selection-end-column="86" />
+        <state relative-caret-position="391">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/realtimeChatRefresh.php">
+    <entry file="file://$PROJECT_DIR$/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="646">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
         </state>
       </provider>
     </entry>

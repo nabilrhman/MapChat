@@ -79,7 +79,6 @@
     var hasScrolled = false;
     var message;
     var scrollTop;
-    global var lastChatId;
     $(document).ready(function () {
 
         /*
