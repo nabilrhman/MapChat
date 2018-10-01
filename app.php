@@ -64,6 +64,8 @@
 
         });*/
 
+
+
     </script>
 
 
@@ -163,8 +165,8 @@
                     scrollTop = $(".chat-list").scrollTop();
                 }
 
-                    $(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000);
-
+                    //$(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000);
+                $(".input").animate({scrollTop: $(".input").prop("scrollHeight")}, 1000);
             }
         });
     }
