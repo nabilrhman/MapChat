@@ -58,15 +58,17 @@ class Chat extends Model
 
     }
 
+
     public static function getAfter($chat_id)
     {
         try {
             $db = static::getDB();
 
-            $stmt = $db->query('SELECT Chats.chat_id, Chats.body, Chats.timestamp, Users.first_name, Users.last_name, Users.email, Users.lat, Users.lng, Users.is_online 
+            $stmt = $db->query("SELECT Chats.chat_id, Chats.body, Chats.timestamp, Users.first_name, Users.last_name, Users.email, Users.lat, Users.lng, Users.is_online 
                                 FROM Chats
                                 LEFT JOIN Users ON Users.user_id = Chats.user_id
-                                WHERE Chats.chat_id >' . $chat_id . ';');
+                                WHERE chat_id > '$chat_id' ORDER BY chat_id");
+
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             return $results;
@@ -79,4 +81,6 @@ class Chat extends Model
 
 
     }
+
+
 }
