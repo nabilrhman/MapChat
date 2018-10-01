@@ -158,19 +158,18 @@
             url: 'realtimeChatRefresh.php',
 
             success: function (response) {
+            	
                 $(".chat-list").html(response);
+
                 if (scrollCount < 2) {
                     $(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000);
                     scrollCount++;
                     scrollTop = $(".chat-list").scrollTop();
                 }
 
-                    //$(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000);
-<<<<<<< HEAD
+                    //$(".chat-list").animate({scrollTop: $(".chat-list").prop("scrollHeight")}, 1000)
                 $(".input").animate({scrollTop: $(".input").prop("scrollHeight")}, 1000);
-=======
 
->>>>>>> abd0a47f6f3fefdf9beb8f24eec12021faff4816
             }
         });
     }
