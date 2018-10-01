@@ -1,12 +1,12 @@
 <?php
 
 include 'Chats.php';
+session_start();
 
 
-
-
-$results = Chat::getAll();
-generateIndex($results);
+if (isset($_SESSION['chat_id'])) {
+    $results = Chat::getAfter(1861);
+}
 
 
 function generateIndex($results)
@@ -39,23 +39,4 @@ function generateIndex($results)
 
 }
 
-
-/*if(isset($_SESSION['chat_id']) && !empty($_SESSION['chat_id']))
-{
-    //$results = Chat::getAfter($_SESSION['chat_id']);
-    //generateIndex($results);
-    $results = Chat::getAll();
-    generateIndex($results);
-
-    $message = $_SESSION['chat_id'];
-    echo "<script type='text/javascript'>alert('$message');</script>";
-}
-else
-    {
-    $results = Chat::getAll();
-    generateIndex($results);
-    echo "<script type='text/javascript'>alert('$results');</script>";
-}*/
-
-//echo "<script type='text/javascript'>alert('$chatId');</script>";
 ?>
